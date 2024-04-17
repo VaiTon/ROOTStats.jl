@@ -1,0 +1,7 @@
+name = "ROOTStats"
+uuid = "0306bf49-540d-48c0-ab12-0847b03dcb25"
+authors = ["VaiTon <eyadlorenzo@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+FHist = "68837c9b-b678-4cd5-9925-8a54edc8f695"
