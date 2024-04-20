@@ -43,7 +43,7 @@ function chi2test(h1::Hist1D{T}, h2::Hist1D{T}, options::Symbol...) where {T<:Re
         _sumw1 = sumw2(h1)
         _sumw2 = sumw2(h2)
 
-        for i in 1:nbin1
+        @simd for i in 1:nbin1
             if _sumw1[i] > 0
                 cnt1s[i] = floor(cnt1s[i] * cnt1s[i] / _sumw1[i] + 0.5)
             else
